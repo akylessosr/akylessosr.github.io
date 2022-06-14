@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹프로그래밍기초</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+        body{
+            background-color: rosybrown;
+        }
+        .body {
+            font-size: 30px;
+            font-family:'Nanum Myeongjo', 나눔 명조;
+        }
+        .one {
+            width: 200px;
+            padding: 30px;
+            margin: 30px;
+            background: peachpuff;
+            border: 4px solid lightpink;
+            float: right;
+            position: absolute;
+            right: 30px;
+        }
+        #container {
+            width: 1800px;
+            padding: 20px;
+            margin:0 auto;
+        }
+        header {
+            width: 1800px;
+            height: 50px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #logo {
+            margin:30px;
+            float: left;
+        }
+        #top {
+            float: right;
+            margin: 30px 20px 0 0;
+        }
+        nav {
+            width: 1800px;
+            height: 80px;
+            margin-top: 5px;
+            padding-bottom: 15px;
+            border: solid 3px #cccccc;
+        }
+        nav li {
+            display: inline;
+            margin: 50px 120px;
+        }
+        section {
+            float: left;
+            margin-top: 10px;
+        }
+        aside {
+            float: left;
+            margin-top: 0px;
+        }
+        aside li{
+            margin-bottom: 70px;
+        }
+        #contents {
+            width: 1650px;
+            padding: 20px;
+            float: left;
+            margin-bottom: 20px;
+        }
+        #sidebar {
+            width: 135px;
+            padding: 20px;
+            float: right;
+            margin-bottom: 20px;
+            height: 160px;
+            text-align: cetner;
+        }
+        footer {
+            clear: both;
+            padding: 20px;
+        }
+        #address {
+            float: left;
+            margin: 30px 0 0 20px;
+            
+        }
+        #customer {
+            float: right;
+            margin: 30px 0 0 180px;
+            padding-right: 20px;
+        }
+        .none{
+            list-style:none;
+        }
+        .shadow {
+            color: #000;
+            text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80;
+        }
+    </style>
+</head>
+<body class="body" id="container">
+    <header>
+        <div id="logo" class="shadow">
+        <b>서정이를 위한 사이트
+        </div>
+        <div id="top" class="shadow">
+        <b>추억을 보관하기 위한 사이트</b>
+        </div>
+        </header>
+        <div class="clear"></div>
+    <div class="clear"></div>
+    <nav>
+        <ul>
+            <li><a href="birthstone.html" style="color: darkcyan; text-decoration: none" title="무지개 요정, 10월 오팔">탄생석</a></li>
+            <li><a href="birthflower.html" style="color: darkviolet; text-decoration: none" title="이끼장미">탄생화</a></li>
+            <li><a href="constellation.html" style="color: slateblue; text-decoration: none" title="천칭자리[Libra]">별자리</a></li>
+            <li><a href="bucketlist.html" style="color: darkblue; text-decoration: none" title="함께 하고싶은 버킷리스트 목록(미구현)">버킷리스트</a></li>
+            <li><a href="mbti.html" style="color: mediumseagreen; text-decoration: none" title="청렴결백한 논리주의자">MBTI</a></li>
+        </ul>
+    </nav>
+    <div class='clear'></div>
+    <iframe src="home.html"name="left" width="400px" height="1050px" frameborder="0" scrolling="no" id="contents"></iframe>
+    </section>
+    <aside>
+        <ul >
+            <li class="none"><iframe src="one.html" name="bb" width="300px" height=120 frameborder="0" scrolling="no" class="one" id="sidebar"></iframe></li>
+        </ul>
+    </aside>
+    
+    <div class="clear"></div>
+    <footer>
+        <div id="address">
+            제작자: 장준환 | 지속적인 업데이트 예정
+        </div>
+        <div id="customer">
+            웹프로그래밍기초
+        </div>
+    </footer>
+</body>
+</html>
